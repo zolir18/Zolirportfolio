@@ -45,8 +45,7 @@ user-select: none;
 }
 }
 img{
-	-o-object-fit: cover;
-	   object-fit: cover;
+	
 	height: 37px;
 }
 /*navabar*/
