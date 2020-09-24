@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway&family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400;500;600;700;800&display=swap');
 ::-webkit-scrollbar { width: 0; }
 *{
 	margin: 0;
@@ -51,14 +52,16 @@ img{
 /*navabar*/
 .navbar_setting{
 	background: rgba(225,225,225, .5);
-	  backdrop-filter: blur(5px);
+	  -webkit-backdrop-filter: blur(5px);
+	          backdrop-filter: blur(5px);
 	  overflow: hidden;
 	position: fixed;
   top: 0;
   width: 100%;
 
   z-index: 99;
-  box-shadow: 0px 0px 14px 3px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 0px 14px 3px rgba(0,0,0,0.75);
+          box-shadow: 0px 0px 14px 3px rgba(0,0,0,0.75);
 	
 }
 
@@ -271,7 +274,8 @@ a {
 .button_block > a:hover{
 	color: white;
 	background: rgba(252,95,69,1);
-	box-shadow: 0px 0px 17px 3px rgba(252,95,69,1);
+	-webkit-box-shadow: 0px 0px 17px 3px rgba(252,95,69,1);
+	        box-shadow: 0px 0px 17px 3px rgba(252,95,69,1);
 	-webkit-transform: translate(0px, -5px);
 	        transform: translate(0px, -5px);
 	-webkit-transition: .3s;
