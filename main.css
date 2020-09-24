@@ -135,6 +135,17 @@ a {
 	-webkit-transition: width 0.3s ease-out;
 	transition: width 0.3s ease-out; /*задаём время анимации*/
 }
+ .nav-list li a:after:nth-child(7) {
+	display: block;
+	position: absolute;
+	left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+	width: 0;/*задаём длинну линии до наведения курсора*/
+	height: 2px; /*задаём ширину линии*/
+	background-color: black ; /*задаём цвет линии*/
+	content: "";
+	-webkit-transition: width 0.3s ease-out;
+	transition: width 0.3s ease-out; /*задаём время анимации*/
+}
 
  .nav-list li a:hover:after,
  .nav-list li a:focus:after {
@@ -143,8 +154,21 @@ a {
 .nav-menu{
   display: none;
 }
+.close_button{
+	display: none !important;
+	width: 0;
+	height: 0;
+}
 
 @media screen and (max-width: 768px) {
+	.close_button{
+	display: inline-block !important;
+	margin: 15px !important;
+	text-align: center;
+	width: 100%;
+	height: 30px;
+}
+
 .nav-menu{
 	color: var(--dark);
 	padding: 15px;
