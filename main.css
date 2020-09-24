@@ -50,13 +50,15 @@ img{
 }
 /*navabar*/
 .navbar_setting{
-	background: var(--light);
+	background: rgba(225,225,225, .5);
+	  backdrop-filter: blur(5px);
 	  overflow: hidden;
 	position: fixed;
   top: 0;
   width: 100%;
+
   z-index: 99;
-  border-bottom: 2px solid var(--dark);
+  box-shadow: 0px 0px 14px 3px rgba(0,0,0,0.75);
 	
 }
 
@@ -106,7 +108,7 @@ a {
 .nav-list li a {
 	margin: 17px 10px;
 	font-family: Montserrat;
-	color: var(--dark);
+	color: red;
   display: block;
   font-size: 1em;
   border-bottom: 2px solid #0000;
@@ -115,7 +117,7 @@ a {
 	position: relative;
 	color:  var(--dark); /*задаём цвет ссылки*/
 	cursor: pointer;
-	line-height: 1; /*задаём высоту строки*/
+	/*задаём высоту строки*/
 	text-decoration: none; /*убираем подчёркивание*/
 
 }
@@ -169,6 +171,9 @@ a {
 /*portfolio*/
 #some_inf{
 	background: var(--light);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position:center center;
 	padding: 50px 0px;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -194,7 +199,7 @@ a {
 .main_some_info_1{
 	max-width: 850px;
 	background: white;
-	padding: 15px;
+	margin: 15px;
 }
 .main_text_portfolio{
 	font-size: 40px;
@@ -243,6 +248,7 @@ a {
 	font-size: calc( 16px + 3vw);
 	font-family: montserrat;
 	color: var(--light);
+	text-shadow: 0px 0px 5px rgba(225,225,225,0.48);
 	padding: 50px 0px; 
 }
 .button_block > a {
@@ -250,10 +256,11 @@ a {
 	display: block;
 	text-transform: uppercase;
 	text-align: center;
-	line-height: 45px;
-	width: 175px;
-	height: 45px;
+	line-height: 55px;
+	width: 195px;
+	height: 55px;
 	color: white;
+	font-weight: 600;
 	border: 1px solid #0000;
 	background: #fc5f45;
 	border-radius: 40px;
@@ -262,10 +269,9 @@ a {
 	transition: .3s;
 }
 .button_block > a:hover{
-	color: var(--dark);
-	background: white;
-	-webkit-box-shadow: 0px 0px 24px 17px rgba(252,95,69,1);
-	        box-shadow: 0px 0px 24px 17px rgba(252,95,69,1);
+	color: white;
+	background: rgba(252,95,69,1);
+	box-shadow: 0px 0px 17px 3px rgba(252,95,69,1);
 	-webkit-transform: translate(0px, -5px);
 	        transform: translate(0px, -5px);
 	-webkit-transition: .3s;
@@ -339,7 +345,7 @@ a {
 	font-size: 3rem;
 	font-weight: 500;
 	font-family: montserrat;
-	
+	color: #2d2d2d;
 	text-align: center;	
 }
 .sub_text{
@@ -601,7 +607,7 @@ overflow: hidden;
   font-family: montserrat;
   font-size: 20px;
   font-weight: 400;
-  padding: 30px 0px 10px 0px;
+  padding: 30px 10px 10px 10px;
 }
 .text_step > p{
   color: #616161;
