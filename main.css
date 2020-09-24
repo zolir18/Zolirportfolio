@@ -19,6 +19,12 @@ user-select: none;
   --dark: #262732d9;
   --light:#e1e1e1;
 }
+input {
+	outline:none;
+}
+a{
+	-webkit-tap-highlight-color: transparent;
+}
 .container {
 
 }
