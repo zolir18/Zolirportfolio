@@ -117,7 +117,6 @@ a {
 .nav-list li a {
 	margin: 17px 10px;
 	font-family: Montserrat;
-	color: red;
   display: block;
   font-size: 1em;
   border-bottom: 2px solid #0000;
@@ -141,13 +140,14 @@ a {
 	-webkit-transition: width 0.3s ease-out;
 	transition: width 0.3s ease-out; /*задаём время анимации*/
 }
- .nav-list li a:after:nth-child(7) {
+ .nav-list li a:nth-child(even)  {
 	display: block;
 	position: absolute;
 	left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
 	width: 0;/*задаём длинну линии до наведения курсора*/
 	height: 2px; /*задаём ширину линии*/
-	background-color: black ; /*задаём цвет линии*/
+	background-color: black !important;
+	color: red !important; /*задаём цвет линии*/
 	content: "";
 	-webkit-transition: width 0.3s ease-out;
 	transition: width 0.3s ease-out; /*задаём время анимации*/
@@ -173,6 +173,10 @@ a {
 	text-align: center;
 	width: 100%;
 	height: 30px;
+}
+ .nav-list li a:hover:after,
+ .nav-list li a:focus:after {
+	width: 0; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
 }
 
 .nav-menu{
