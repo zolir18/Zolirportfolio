@@ -61,7 +61,7 @@ img{
 }
 /*navabar*/
 .navbar_setting{
-	background: rgba(225,225,225, .5);
+	background: rgba(225,225,225, .7);
 	  -webkit-backdrop-filter: blur(5px);
 	          backdrop-filter: blur(5px);
 	  overflow: hidden;
@@ -104,6 +104,7 @@ a {
     
 }
 
+
 .nav-container {
     overflow: hidden;
 }
@@ -138,7 +139,8 @@ a {
 	position: absolute;
 	left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
 	width: 0;/*задаём длинну линии до наведения курсора*/
-	height: 2px; /*задаём ширину линии*/
+	height: 2px;
+    bottom: -6px;
 	background-color: #fc5f45 ; /*задаём цвет линии*/
 	content: "";
 	-webkit-transition: width 0.3s ease-out;
@@ -159,7 +161,9 @@ a {
 
  .nav-list li a:hover:after,
  .nav-list li a:focus:after {
-	width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+	width: 100%; /
+	
+	*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
 }
 .nav-menu{
   display: none;
@@ -745,7 +749,6 @@ overflow: hidden;
   grid-gap: 20px;
 }
 .first_row_form{
-  text-align: center;
   background: white;
   color: #616161;
   font-family: montserrat;
@@ -754,7 +757,6 @@ overflow: hidden;
   padding: 20px 20px;                   
 }
 .mail{
-  text-align: center;
   -ms-grid-row: 2;
   grid-row: 2;
   -ms-grid-column: 1;
@@ -768,8 +770,6 @@ overflow: hidden;
   padding: 20px 20px;  
 }
 .text_form{
-
-    text-align: center;
   -ms-grid-row: 3;
   grid-row: 3;
   -ms-grid-column: 1;
@@ -780,8 +780,18 @@ overflow: hidden;
   font-family: montserrat;
   font-size: 16px;
   font-weight: 400;
-  padding: 60px 40px;  
+  padding: 60px 20px;  
 }
+
+form input[type="submit"] { /* more specific to override webkit */ 
+   -webkit-appearance:none;  
+   -webkit-border-radius:0px;
+   margin:0;  
+   padding:0;  
+   border:0;  
+   display:block;
+} 
+
 .button_messeg{
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
@@ -881,6 +891,15 @@ footer{
 	height: 45px;
 	line-height: 45px;
 }
+
+input, input:before, input:after {
+      -webkit-user-select: initial;
+      -khtml-user-select: initial;
+      -moz-user-select: initial;
+      -ms-user-select: initial;
+      user-select: initial;
+      text-align: center;
+     }
 
 @media (max-width: 970px){
 	.services_cards{
@@ -998,4 +1017,5 @@ footer{
 }
 .sub_text_statistik {
     font-size: 12px;
+
     }}
