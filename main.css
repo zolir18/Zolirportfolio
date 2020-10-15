@@ -680,6 +680,7 @@ overflow: hidden;
   font-family: montserrat;
   font-size: 15px;
   font-weight: 400;
+  padding-left: 10px;
 }
 .setting_step_block{
   -ms-grid-row: 1;
@@ -869,7 +870,8 @@ footer{
 .location > p {
 	
 	font-family: montserrat;
-	padding: 20px
+	text-align: center;
+	
 	
 }
 .green{
