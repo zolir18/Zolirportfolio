@@ -20,6 +20,7 @@ user-select: none;
   --dark: #262732d9;
   --light:#e1e1e1;
 }
+
 input {
 	outline:none;
 }
@@ -55,6 +56,7 @@ a{
   max-width: 1140px;
 }
 }
+
 img{
 	
 	height: 37px;
@@ -870,7 +872,7 @@ footer{
 .location > p {
 	
 	font-family: montserrat;
-	text-align: center;
+	padding: 20px 40% ;
 	
 	
 }
