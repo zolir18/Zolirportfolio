@@ -41,7 +41,7 @@ a{
   padding: 0;
 }
 }
-@media (min-width: 767.98px){
+@media (min-width: 768.98px){
 .container {
   max-width: 720px;
 }
@@ -912,7 +912,7 @@ input, input:before, input:after {
 }
 }
 
-@media (max-width: 767.98px){
+@media (max-width: 768.98px){
 .nav-list li a {
 	color: var(--light);
 	padding: 0px 20px;
